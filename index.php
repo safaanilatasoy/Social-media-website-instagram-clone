@@ -15,7 +15,7 @@
 </head>
 <body>
     <!-- Navbar -->
-<nav class="navbar navbar-expand-lg border-bottom">
+<nav class="navbar navbar-expand-lg border-bottom" style="background-color:#FFF;">
   <div class="container-fluid">
     <a class="nav-link mx-5" href="#"><img class="navbar-main-logo" src="images/instagram_hand writing-logo.png"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,6 +49,101 @@
   </div>
 </nav>
 
+<div class="container ">
+<div class="container text-center" >
+  <div class="row justify-content-center" >
+    <div class="col-4 border justify-content-center my-5 color-white d-none d-sm-block" style="border-radius: 5px !important;">
+      <div class="row" >
+    <div class="container">
+        <div class="col-12  justify-content-center mb-4">
+          <div class="bordered">
+            <div class="row h-100">
+              <div
+                id="carousel-1"
+                class="carousel slide w-100"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner h-100">
+                  <div class="carousel-item active h-100">
+                    <div class="col-4 h-100" id="pad">
+                      <div class="card h-100">
+                        <div class="profile-pic">p </div>
+                        <div class="profile-sec1-text">Anıl Atasoy</div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <div class="col-4 h-100" id="pad">
+                      <div class="card h-100 "><div class="profile-pic">p </div>
+                      <div class="profile-sec1-text">Anıl Atasoy</div>
+                    </div>
+                      
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <div class="col-4 h-100" id="pad">
+                      <div class="card h-100 "><div class="profile-pic">p </div>
+                      <div class="profile-sec1-text">Anıl Atasoy</div></div>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <div class="col-4 h-100" id="pad">
+                      <div class="card h-100 "><div class="profile-pic">p </div>
+                      <div class="profile-sec1-text">Anıl Atasoy</div></div>
+                      
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <div class="col-4 h-100" id="pad">
+                      <div class="card h-100 "><div class="profile-pic">p </div>
+                      <div class="profile-sec1-text">Anıl Atasoy</div></div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#carousel-1"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon bg-dark rounded-circle"
+                    aria-hidden="true"
+                  ></span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carousel-1"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon bg-dark rounded-circle"
+                    id="bordered-2"
+                    aria-hidden="true"
+                  ></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    </div>
+    <div class="col-6">
+      Column
+    </div>
+    
+  </div>
+</div>
+</div>
+
+  
+
+
+</div>
+
 
 
 <!-- Bootstrap JS -->
@@ -56,6 +151,23 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script>$("#carousel-1").carousel({
+  interval: 3000
+});
+
+$("#carousel-1.carousel .carousel-item").each(function () {
+  const total = 3;
+  let next = $(this).next();
+
+  for (var i = 0; i < total - 1; i++) {
+    if (!next.length) {
+      next = $(this).siblings(":first");
+    }
+    next.children(":first-child").clone().appendTo($(this));
+    next = next.next();
+  }
+});
+</script>
 
 
 </body>

@@ -1,3 +1,7 @@
+body{
+    background-color: #FAFAFA;
+}
+
 .navbar-main-logo {
     width: 120px;
     position: relative !important;
@@ -18,4 +22,61 @@
     position: relative !important;
     left:450px !important;
    
+}
+
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+  }
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(33.333%);
+  }
+  
+  .carousel-inner .carousel-item-left.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.333%);
+  }
+  .carousel-inner .carousel-item {
+    transition: transform 1.5s ease;
+  }
+  .carousel-inner .carousel-item-right,
+  .carousel-inner .carousel-item-left {
+    transform: translateX(0);
+  }
+ 
+  #pad {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .color-1 {
+    background-color: rgb(114, 107, 107);
+  }
+  .color-white {
+    background-color: #fff;
+  }
+
+  .bordered {
+   margin-top: 20px;
+    border-radius: 11px;
+    padding: 5px 5px 5px 5px;
+    height: 100px;
+    width: 100%;
+    background-color:#FFF;
+  }
+  .profile-pic{
+    width: 60px;
+    height: 60px;
+    border-radius:100%;
+    background-color: red;
+    margin: auto;
+  }
+
+  
+.card {
+    border: none !important;
+}
+.profile-sec1-text{
+    font-size: 14px !important;
 }
