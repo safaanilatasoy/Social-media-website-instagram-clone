@@ -28,25 +28,21 @@
       </form>
       <ul class="navbar-nav navbar-main-icons">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#"><img src="images/homepage.png"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+          <a class="nav-link" href="#"><img src="images/messenger.png"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+          <a class="nav-link" href="#"><img src="images/more.png"></a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="images/compass.png"></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#"><img src="images/heart.png"></a>
+        </li>
+        
       </ul>
       
     </div>
