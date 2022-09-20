@@ -15,18 +15,18 @@
 </head>
 <body>
     <!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid mx-5">
-    <a class="nav-link dropdown-toggle mx-5" href="#"><img class="navbar-main-logo" src="images/instagram_hand writing-logo.png"></a>
+<nav class="navbar navbar-expand-lg border-bottom">
+  <div class="container-fluid">
+    <a class="nav-link mx-5" href="#"><img class="navbar-main-logo" src="images/instagram_hand writing-logo.png"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
-    <form class="d-flex mx-5" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <form class="d-flex navbar-search-div" role="search">
+        <input class="form-control me-2 navbar-search" type="search" placeholder="Search" aria-label="Search">
         <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
       </form>
-      <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end">
+      <ul class="navbar-nav navbar-main-icons">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>

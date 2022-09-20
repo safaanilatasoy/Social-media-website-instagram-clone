@@ -1,3 +1,21 @@
 .navbar-main-logo {
-    width: 100px;
+    width: 120px;
+    position: relative !important;
+    left:200px !important;
+}
+.navbar-search{
+    background-color: #EFEFEF;
+    width: 266px;
+    height: 37px;
+    border:none;
+    
+}
+.navbar-search-div{
+    position: relative !important;
+    left:380px !important;
+}
+.navbar-main-icons{
+    position: relative !important;
+    left:450px !important;
+   
 }
